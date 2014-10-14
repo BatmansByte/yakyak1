@@ -1,0 +1,158 @@
+#left {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    color: #333;
+    font-size: 100%;
+    border: 3px red;
+}
+#right {
+    position: absolute;
+    display:block;
+    top: 0;
+    right: 0;
+    padding: .5em;
+    color: #aaa;
+    font-size: 100%;
+    border: 3px red;
+}
+/* -----------------------------------
+Pseudo-elements in media queries
+----------------------------------- */
+@media (max-width: 30em) {
+    #leftems:before {
+        content: "<30em";
+        background-color: red;
+    }
+}
+
+@media (min-width: 30.1em) and (max-width: 40em) {
+    #leftems:before {
+        content: "30 -40 em";
+        background-color: orange;
+    }
+}
+
+
+@media (min-width: 40.1em) and (max-width: 50em) {
+    #leftems:before {
+        content: "40 -50 em";
+        background-color: yellow;
+    }
+}
+
+
+
+
+@media (min-width: 50.1em) and (max-width: 60em) {
+    #leftems:before {
+        content: "50 -60 em";
+        background-color: greenyellow;
+    }
+}
+
+
+@media (min-width: 60.1em) and (max-width: 70em) {
+    #leftems:before {
+        content: "60 -70 em";
+        background-color: green;
+    }
+}
+
+@media (min-width: 70.1em) and (max-width: 80em) {
+    #leftems:before {
+        content: "70 -80 em";
+        background-color: purple;
+    }
+}
+
+@media (min-width: 80.1em) and (max-width: 90em) {
+    #leftems:before {
+        content: "80 -90 em";
+        background-color: blue;
+    }
+}
+
+@media (max-width: 200px) {
+    #right200:before {
+        content: "<200px";
+        background-color: red;
+    }
+}
+
+@media (min-width: 201px) and (max-width: 400px) {
+    #right200:before {
+        content: "201 - 400px";
+        background-color: orange;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+    #right200:before {
+        content: "401 - 600px";
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    #right200:before {
+        content: "601 - 800px";
+        background-color: green;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    #right200:before {
+        content: "801 - 1000px";
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    #right200:before {
+        content: "1001 - 1200px";
+        background-color: purple;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    #right200:before {
+        content: "1201 - 1400px";
+        background-color: gray;
+    }
+}
+
+@media (max-width: 300px) {
+    #right300:before {
+        content: ">300px";
+        background-color: red;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 600px) {
+    #right300:before {
+        content: "301 - 600px";
+        background-color: orange;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #right300:before {
+        content: "601 - 900px";
+        background-color: yellow;
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+    #right300:before {
+        content: "901 - 1200px";
+        background-color: green;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1500px) {
+    #right300:before {
+        content: "1201 - 1500px";
+        background-color: blue;
+    }
+}
