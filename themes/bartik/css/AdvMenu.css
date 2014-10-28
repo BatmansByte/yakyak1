@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 14, 2014, 4:57:16 PM
+    Author     : batman
+*/
+
+#AdvMenu {
+    font-family: Candara, "Trebuchet MS", san-serif;
+    font-size: 3.25em;
+    line-height: 1.1em;
+    background-color: #f00;
+    font-color: #00F;
+}
+#AdvMenu ul {
+    background-image: url('../images/menucolled.png');
+    background-repeat: no-repeat;
+    z-index: 55;
+}
+#AdvMenu ul a {
+    background-image: url("../images/menunox.png");
+    background-repeat: no-repeat;
+}
+#AdvMenu .Cats li {
+    visibility: visible;
+}
+
+#AdvMenu .Dogs {
+    visibility: hidden;
+}
